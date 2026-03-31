@@ -5,7 +5,7 @@ export function errorHandler(
     err: Error | string,
     req: Request,
     res: Response,
-    next, NextFuntion
+    // next, NextFuntion
 ): Response | void {
     if (typeof err === "string") {
         const is404 = err.toLocaleLowerCase().endsWith("not found")

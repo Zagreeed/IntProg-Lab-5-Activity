@@ -1,6 +1,6 @@
 import bcrypt from "bcryptjs"
-import { db } from "_helpers/db"
-import { Role } from "_helpers/role"
+import { db } from "../_helpers/db"
+import { Role } from "../_helpers/role"
 import { User, UserCreationAttributes } from "./user.model"
 
 

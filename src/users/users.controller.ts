@@ -1,8 +1,8 @@
 import type { Request, Response, NextFunction } from "express";
 import { Router } from "express";
 import Joi from "joi";
-import { Role } from "_helpers/role";
-import { validateRequest } from "middleware/validateRequest";
+import { Role } from "../_helpers/role";
+import { validateRequest } from "../middleware/validateRequest";
 import { userService } from "./user.service";
 
 
