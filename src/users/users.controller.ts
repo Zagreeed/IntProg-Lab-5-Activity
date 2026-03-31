@@ -26,7 +26,7 @@ function getById(req: Request, res: Response, next: NextFunction): void {
     userService.getById(Number(req.params.id)).then((users) => res.json((users))).catch(next)
 }
 function create(req: Request, res: Response, next: NextFunction): void {
-    userService.create(req.body).then((users) => res.json({ message: "User Created" })).catch(next)
+    userService.create(req.body).then(() => res.json({ message: "User Created" })).catch(next)
 }
 function update(req: Request, res: Response, next: NextFunction): void {
     userService.update(Number(req.params.id), req.body).then((users) => res.json({ message: "User updated" })).catch(next)

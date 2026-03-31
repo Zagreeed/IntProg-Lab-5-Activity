@@ -26,6 +26,6 @@ initialize()
             console.log(`TEST WITH: POST /users with {email, password, ....}`)
         })
     }).catch((err) => {
-        console.log(`Failed to initialize database: ${err}`)
+        console.log(`Failed to initialize database::`, err)
         process.exit(1)
     })

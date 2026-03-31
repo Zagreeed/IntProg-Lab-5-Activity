@@ -45,7 +45,7 @@ export default function (sequelize: Sequelize): typeof User {
                 unique: true
             },
             passwordHash: {
-                type: DataTypes.INTEGER,
+                type: DataTypes.STRING,
                 allowNull: false,
             },
             title: {
