@@ -4,8 +4,9 @@ import { errorHandler } from "./middleware/errorHandler"
 import { initialize } from "./_helpers/db"
 import userController from "./users/users.controller"
 import accountController from "./accounts/accounts.controller"
-
-
+import departementController from "./departments/departments.controller"
+import employeeController from "./employees/employees.controller"
+import requestController from "./requests//requests.controller"
 
 
 const app: Application = express()
@@ -18,6 +19,9 @@ app.use(cors())
 
 app.use("/users", userController)
 app.use("/accounts", accountController);
+app.use("/departments", departementController);
+app.use("/employees", employeeController);
+app.use("/requests", requestController);
 
 app.use(errorHandler)
 
